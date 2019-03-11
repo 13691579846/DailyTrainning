@@ -29,18 +29,15 @@ print(code)
 # 日期和时间模块
 '''
 from datetime import date, datetime, timedelta
-
 now = date.today()
 print(now) # 当前日期
 print(now.year) # 年
 print(now.month) # 月
 print(now.day) # 日
 print(now.isoweekday()) # 第几周
-
 print(now+timedelta(days=1)) # 当前日期+1天
 print(now-timedelta(days=1)) # 当前日期-1天
 print(now+timedelta(days=7)) # 当前日期+1周
-
 nowDate = datetime.now()
 print(nowDate) # 当前日期时间
 print(nowDate.date()) # 当前日期
