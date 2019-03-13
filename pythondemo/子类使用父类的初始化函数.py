@@ -7,7 +7,7 @@ class FatherCls(object):
 # 子类使用父类的初始化方法，第一种初始化方法
 # class Son(FatherCls):
 #
-#     def __init__(self, name, age,hebby):
+#     def __init__(self, name, age, hebby):
 #         FatherCls.__init__(self,name, age)
 #         self.hebby = hebby # 派生属性
 #     def showMe(self):
@@ -21,3 +21,6 @@ class Son(FatherCls):
 if __name__=='__main__':
     me = Son('xiaochao',22)
     me.showMe()
+
+    dic = [{'name':'xiaochao'},{'age':22}]
+    print(*dic)
